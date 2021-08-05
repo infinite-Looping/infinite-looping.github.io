@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Looping</title>
+
+    <style>
+        .div1{
+           background-color:crimson;
+           color: white;
+           font-size: 20px;
+           font-weight: 600;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+        }
+        h1{
+            color:teal;
+            text-shadow: 2px 1px 2px black;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+    
+         
+
+    </style>
+</head>
+<body style="background:rgba(0, 0, 0, .6) url(./Green_smoke-bg.jpg); background-repeat: no-repeat; background-size: cover; background-blend-mode: darken; min-height:600px;  ">
+     <h1>
+         If you click the Names ,It will Crash your Browser 
+     </h1>
+    
+    <div class="div1" style="cursor: pointer;">
+    Pradeep <br> Arshan <br> Bhenny <br> Gokul <br> Manoj <br>Rohith <br> yogesh <br>Sanjay <br> Vetri <br> Shyam <br>Venkat  
+    </div>
+
+
+    <script>
+       let div=document.querySelector(".div1");
+       console.log(div);
+       div.addEventListener("click",()=>{
+           for(i=1;i>0;i++){
+               console.log("Pradeep");
+           }
+       })
+     
+    </script>
+</body>
+</html>
